@@ -1,0 +1,16 @@
+ilhammansiez/config.py
+ilhammansiez/*.session
+ilhammansiez/*.session-journal
+ilhammansiez/config.ini
+*.pyc
+.idea/
+.project
+.pydevproject
+.directory
+.vscode
+ilhammansiez/modules/helper_funcs/temp.txt
+ilhammansiez/elevated_users.json
+start-3.6.bat
+*.session
+kangsticker.png
+venv
