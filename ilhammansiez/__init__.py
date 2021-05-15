@@ -35,17 +35,17 @@ if ENV:
         SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
         DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
     except ValueError:
-        raise Exception("Your sudo or dev users list does not contain valid integers.")
+        raise Exception("Daftar pengguna dukungan Anda tidak berisi bilangan bulat yang valid.")
 
     try:
         SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
     except ValueError:
-        raise Exception("Your support users list does not contain valid integers.")
+        raise Exception("Daftar pengguna dukungan Anda tidak berisi bilangan bulat yang valid.")
 
     try:
         SPAMMERS = set(int(x) for x in os.environ.get("SPAMMERS", "").split())
     except ValueError:
-        raise Exception("Your spammers users list does not contain valid integers.")
+        raise Exception("Daftar pengguna spammers Anda tidak berisi bilangan bulat yang valid.")
 
     try:
         WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "").split())
