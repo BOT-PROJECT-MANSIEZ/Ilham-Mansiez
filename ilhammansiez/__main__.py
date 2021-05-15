@@ -393,7 +393,7 @@ def settings_button(bot: Bot, update: Update):
             chat_id = next_match.group(1)
             next_page = int(next_match.group(2))
             chat = bot.get_chat(chat_id)
-            query.message.reply_text(Halo yang disana! Ada beberapa pengaturan untuk {} - lanjutkan dan pilih apa "
+            query.message.reply_text("Halo yang disana! Ada beberapa pengaturan untuk {} - lanjutkan dan pilih apa "
                                      "you're interested in.".format(chat.title),
                                      reply_markup=InlineKeyboardMarkup(
                                          paginate_modules(next_page + 1, CHAT_SETTINGS, "stngs",
