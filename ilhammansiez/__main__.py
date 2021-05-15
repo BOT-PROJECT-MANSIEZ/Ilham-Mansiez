@@ -19,7 +19,6 @@ from ilhammansiez import dispatcher, updater, TOKEN, WEBHOOK, OWNER_ID, CERT_PAT
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from ilhammansiez.modules import ALL_MODULES
 from ilhammansiez import dispatcher
-from ilhammansiez.modules.disable import DisableAbleCommandHandler
 from ilhammansiez.modules.helper_funcs.chat_status import is_user_admin
 from ilhammansiez.modules.helper_funcs.misc import paginate_modules
 
